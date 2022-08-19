@@ -13,19 +13,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK: - TableView
     
+    // closure parttern
+    // () parameter
     private let tableView: UITableView = {
-       let table = UITableView()
+        let table = UITableView()
+        
+        // register new cell
+        // self: reference the type object
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
         return table
     }()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidLayoutSubviews() {
@@ -33,22 +39,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.frame = view.bounds
     }
     
+    
+    // MARK: - Table view data source object
+    
+    // Reporting the number of sections and rows in the table.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
     }
     
+    // Providing cells for each row of the table.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        // Configure content
         // Similar View - ViewModel arhitecture
-        var configure = cell.defaultContentConfiguration()
-        configure.text = "alarm  tableView: \(indexPath.row)"
-        configure.image = UIImage(systemName: "bell")
+        var content = cell.defaultContentConfiguration()
+        content.text = "alarm  tableView: \(indexPath.row)"
+        content.image = UIImage(systemName: "bell")
          
-        cell.contentConfiguration = configure
+        // Customize appearence
+        cell.contentConfiguration = content
         
         return cell
     }
+    
     
 
     /*
