@@ -9,20 +9,20 @@ import UIKit
 
 // MARK:  - TableView as code
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource {
 
     // MARK: - TableView
     
     // closure parttern
     // () parameter
     private let tableView: UITableView = {
-        let table = UITableView()
+        let tableView = UITableView()
         
         // register new cell
         // self: reference the type object
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
-        return table
+        return tableView
     }()
     
     
@@ -30,12 +30,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
-        tableView.delegate = self
         tableView.dataSource = self
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
+        // frame: the view’s location and size in its superview’s coordinate system.
+        // bound: the view’s location and size in its own coordinate system.
         tableView.frame = view.bounds
     }
     
