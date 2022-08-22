@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Collection view inside talbe view cell
+// MARK: - Collection view inside talbe view cell (MVVM)
 
 struct CollectionTableViewCellViewModel {
     let viewModels: [TileCollectionCellViewModel]
