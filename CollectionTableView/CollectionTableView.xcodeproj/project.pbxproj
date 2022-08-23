@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7979FDDA28AE4D5F00D2F34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979FDD928AE4D5F00D2F34E /* AppDelegate.swift */; };
 		7979FDDC28AE4D5F00D2F34E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979FDDB28AE4D5F00D2F34E /* SceneDelegate.swift */; };
-		7979FDDE28AE4D5F00D2F34E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979FDDD28AE4D5F00D2F34E /* ViewController.swift */; };
+		7979FDDE28AE4D5F00D2F34E /* CarouseCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979FDDD28AE4D5F00D2F34E /* CarouseCollectionTableViewController.swift */; };
 		7979FDE128AE4D5F00D2F34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7979FDDF28AE4D5F00D2F34E /* Main.storyboard */; };
 		7979FDE328AE4D6100D2F34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7979FDE228AE4D6100D2F34E /* Assets.xcassets */; };
 		7979FDE628AE4D6100D2F34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7979FDE428AE4D6100D2F34E /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		7979FDD628AE4D5F00D2F34E /* CollectionTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7979FDD928AE4D5F00D2F34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7979FDDB28AE4D5F00D2F34E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7979FDDD28AE4D5F00D2F34E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7979FDDD28AE4D5F00D2F34E /* CarouseCollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouseCollectionTableViewController.swift; sourceTree = "<group>"; };
 		7979FDE028AE4D5F00D2F34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7979FDE228AE4D6100D2F34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7979FDE528AE4D6100D2F34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				7979FDD928AE4D5F00D2F34E /* AppDelegate.swift */,
 				7979FDDB28AE4D5F00D2F34E /* SceneDelegate.swift */,
-				7979FDDD28AE4D5F00D2F34E /* ViewController.swift */,
+				7979FDDD28AE4D5F00D2F34E /* CarouseCollectionTableViewController.swift */,
 				7979FE0B28AE4EB700D2F34E /* CollectionTableViewCell.swift */,
 				7979FE0D28AFBB9000D2F34E /* TileCollectionViewCell.swift */,
 				7979FDDF28AE4D5F00D2F34E /* Main.storyboard */,
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7979FDDE28AE4D5F00D2F34E /* ViewController.swift in Sources */,
+				7979FDDE28AE4D5F00D2F34E /* CarouseCollectionTableViewController.swift in Sources */,
 				7979FE0E28AFBB9000D2F34E /* TileCollectionViewCell.swift in Sources */,
 				7979FDDA28AE4D5F00D2F34E /* AppDelegate.swift in Sources */,
 				7979FDDC28AE4D5F00D2F34E /* SceneDelegate.swift in Sources */,

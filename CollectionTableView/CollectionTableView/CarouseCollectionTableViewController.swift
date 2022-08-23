@@ -7,9 +7,9 @@
 
 import UIKit
 
-// MARK:  - TableView as code
+// MARK:  - Carouse collection view inside talbe view (MVVM)
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CarouseCollectionTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - TableView
     
@@ -78,7 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 }
 
-extension ViewController: CollectionTableViewCellDelegate {
+extension CarouseCollectionTableViewController: CollectionTableViewCellDelegate {
     func collectionTableViewTapIteom(with viewModel: TileCollectionCellViewModel) {
         let alert = UIAlertController(title: viewModel.name, message: "Success", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))

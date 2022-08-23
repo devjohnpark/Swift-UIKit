@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Carouse Collection view inside talbe view cell (MVVM)
+// MARK: - Collection view inside table view cell
 
 struct CollectionTableViewCellViewModel {
     let viewModels: [TileCollectionCellViewModel]
